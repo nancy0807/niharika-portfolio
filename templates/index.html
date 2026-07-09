@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika Chauhan — AI Engineer & Product Thinker</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav id="navbar">
+    <div class="nav-inner">
+
+        <a href="#about" class="logo">
+            <span class="logo-name">Niharika</span>
+            <span class="logo-jp">ニハリカ</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#case-study" class="nav-link" data-section="case-study">Case Study</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="#contact" class="nav-cta">Let's Connect</a>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav-mobile" id="navMobile">
+        <a href="#about"      class="nav-mobile-link" data-section="about">About</a>
+        <a href="#projects"   class="nav-mobile-link" data-section="projects">Projects</a>
+        <a href="#case-study" class="nav-mobile-link" data-section="case-study">Case Study</a>
+        <a href="#contact"    class="nav-mobile-link" data-section="contact">Contact</a>
+    </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="about">
+
+    <!-- Wordmark behind everything -->
+    <div class="hero-wordmark" aria-hidden="true">
+        <span class="wm-line">NIHARIKA</span>
+        <span class="wm-line">NIHARIKA</span>
+        <span class="wm-line">NIHARIKA</span>
+    </div>
+
+    <!-- Brick right panel -->
+    <div class="hero-block" aria-hidden="true"></div>
+
+    <!-- Left column -->
+    <div class="hero-left">
+
+        <p class="tag">AI Engineer &nbsp;·&nbsp; Product Thinker &nbsp;·&nbsp; Digital Wellbeing</p>
+
+        <h1 class="hero-headline">
+            Building AI<br>
+            <em>that improves</em><br>
+            how people <span id="heroTyped" class="hero-typed"></span>
+        </h1>
+
+        <p class="subtitle">
+            B.Tech CSE (AI &amp; ML) @ VIT Bhopal &nbsp;·&nbsp; Targeting Master's 2027 ·
+            Passionate about human-centred AI and digital wellbeing.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn-primary btn-primary--hero">
+                <span class="btn-text">View Projects</span>
+                <span class="btn-arrow">→</span>
+            </a>
+            <a href="#case-study" class="btn-secondary">Read Case Study</a>
+        </div>
+
+        <div class="hero-meta">
+            <div class="meta-item">
+                <span class="meta-number">4+</span>
+                <span class="meta-label">AI Projects</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+                <span class="meta-number">Top 50</span>
+                <span class="meta-label">JHU Hackathon</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+                <span class="meta-number">2027</span>
+                <span class="meta-label">Master's Goal</span>
+            </div>
+        </div>
+
+        <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/niharika776327" target="_blank" rel="noopener" class="hero-social-link">LI: /niharika776327</a>
+            <span class="hero-social-sep">·</span>
+            <a href="https://github.com/nancy0807" target="_blank" rel="noopener" class="hero-social-link">GH: /nancy0807</a>
+            <span class="hero-social-sep">·</span>
+            <a href="mailto:cniharika278@gmail.com" class="hero-social-link">cniharika278@gmail.com</a>
+        </div>
+
+    </div>
+
+    <!-- Right column — floats over brick block -->
+    <div class="hero-right">
+
+        <div class="research-card">
+            <div class="research-tag">
+                <span class="research-dot"></span>
+                Active Research
+            </div>
+            <h2 class="research-title">Can AI Reduce<br>Social Media Addiction?</h2>
+            <p class="research-desc">
+                Building an AI-powered behaviour coach that helps users reclaim
+                their attention and form healthier digital habits.
+            </p>
+            <div class="research-footer">
+                <span class="pill">Behavioural AI</span>
+                <span class="pill">Digital Wellbeing</span>
+                <span class="pill">HCI</span>
+            </div>
+        </div>
+
+        <div class="hero-cards-row">
+            <div class="ambient-card ambient-card--green">
+                <p class="ambient-label">Current focus</p>
+                <p class="ambient-value">AI Product Strategy</p>
+            </div>
+            <div class="ambient-card ambient-card--brick">
+                <p class="ambient-label">Open to</p>
+                <p class="ambient-value">Internships &amp; Research</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#journey" class="hero-scroll" aria-label="Scroll down">
+        <div class="hero-scroll-wheel"></div>
+        <span>Scroll</span>
+    </a>
+
+</section>
+
+<!-- ===================== JOURNEY ===================== -->
+<section class="journey" id="journey">
+
+    <!-- Ghibli-style background fog orbs -->
+    <div class="journey-bg" aria-hidden="true">
+        <div class="journey-orb journey-orb--1"></div>
+        <div class="journey-orb journey-orb--2"></div>
+        <div class="journey-orb journey-orb--3"></div>
+    </div>
+
+    <div class="section-intro reveal">
+        <p class="section-tag">Journey</p>
+        <h2>From Student Leader<br>to AI Product Builder</h2>
+        <p class="journey-subtitle">Five chapters. One direction.</p>
+    </div>
+
+    <!-- Central spine line (drawn on scroll via JS) -->
+    <div class="timeline-spine-wrap" aria-hidden="true">
+        <div class="timeline-spine">
+            <div class="timeline-spine-fill" id="timelineSpineFill"></div>
+        </div>
+    </div>
+
+    <div class="timeline" id="journeyTimeline">
+
+        <!-- Step 1 — left -->
+        <div class="tl-row tl-row--left">
+            <div class="tl-card tl-reveal" data-index="0">
+                <div class="tl-card-inner">
+                    <div class="tl-icon-wrap">
+                        <span class="tl-icon">👩‍🎓</span>
+                        <div class="tl-icon-ring"></div>
+                    </div>
+                    <div class="tl-body">
+                        <span class="tl-era">School · Leadership</span>
+                        <h3>Head Girl</h3>
+                        <p>Leadership, public speaking &amp; institutional governance</p>
+                        <div class="tl-tags">
+                            <span class="tl-tag">Leadership</span>
+                            <span class="tl-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-node tl-node--left tl-reveal" data-index="0">
+                <div class="tl-node-dot"></div>
+                <div class="tl-node-arm"></div>
+            </div>
+            <div class="tl-spacer"></div>
+        </div>
+
+        <!-- Step 2 — right -->
+        <div class="tl-row tl-row--right">
+            <div class="tl-spacer"></div>
+            <div class="tl-node tl-node--right tl-reveal" data-index="1">
+                <div class="tl-node-arm"></div>
+                <div class="tl-node-dot"></div>
+            </div>
+            <div class="tl-card tl-reveal" data-index="1">
+                <div class="tl-card-inner">
+                    <div class="tl-icon-wrap">
+                        <span class="tl-icon">🏐</span>
+                        <div class="tl-icon-ring"></div>
+                    </div>
+                    <div class="tl-body">
+                        <span class="tl-era">College · Sports</span>
+                        <h3>Volleyball Coordinator</h3>
+                        <p>Team management, events &amp; cross-functional collaboration</p>
+                        <div class="tl-tags">
+                            <span class="tl-tag">Team Building</span>
+                            <span class="tl-tag">Operations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 — left -->
+        <div class="tl-row tl-row--left">
+            <div class="tl-card tl-reveal" data-index="2">
+                <div class="tl-card-inner">
+                    <div class="tl-icon-wrap">
+                        <span class="tl-icon">☁️</span>
+                        <div class="tl-icon-ring"></div>
+                    </div>
+                    <div class="tl-body">
+                        <span class="tl-era">College · Cloud</span>
+                        <h3>AWS Cloud Club</h3>
+                        <p>Technical community building &amp; cloud infrastructure</p>
+                        <div class="tl-tags">
+                            <span class="tl-tag">AWS</span>
+                            <span class="tl-tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-node tl-node--left tl-reveal" data-index="2">
+                <div class="tl-node-dot"></div>
+                <div class="tl-node-arm"></div>
+            </div>
+            <div class="tl-spacer"></div>
+        </div>
+
+        <!-- Step 4 — right -->
+        <div class="tl-row tl-row--right">
+            <div class="tl-spacer"></div>
+            <div class="tl-node tl-node--right tl-reveal" data-index="3">
+                <div class="tl-node-arm"></div>
+                <div class="tl-node-dot"></div>
+            </div>
+            <div class="tl-card tl-reveal" data-index="3">
+                <div class="tl-card-inner">
+                    <div class="tl-icon-wrap">
+                        <span class="tl-icon">🤖</span>
+                        <div class="tl-icon-ring"></div>
+                    </div>
+                    <div class="tl-body">
+                        <span class="tl-era">Now · Engineering</span>
+                        <h3>AI Builder</h3>
+                        <p>Projects, NLP research &amp; full-stack AI development</p>
+                        <div class="tl-tags">
+                            <span class="tl-tag">NLP</span>
+                            <span class="tl-tag">RAG</span>
+                            <span class="tl-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Step 5 — right -->
+        <div class="tl-row tl-row--right">
+            <div class="tl-spacer"></div>
+            <div class="tl-node tl-node--right tl-reveal" data-index="4">
+                <div class="tl-node-arm"></div>
+                <div class="tl-node-dot"></div>
+            </div>
+            <div class="tl-card tl-reveal" data-index="4">
+                <div class="tl-card-inner">
+                    <div class="tl-icon-wrap">
+                        <span class="tl-icon">🎤</span>
+                        <div class="tl-icon-ring"></div>
+                    </div>
+                    <div class="tl-body">
+                        <span class="tl-era">College · Events</span>
+                        <h3>Event Host &amp; Anchor</h3>
+                        <p>Hosted Jassu Khann &amp; anchored multiple tech and non-tech college events — formal, informal and improv scripts.</p>
+                        <div class="tl-tags">
+                            <span class="tl-tag">Public Speaking</span>
+                            <span class="tl-tag">Scripting</span>
+                            <span class="tl-tag">Anchoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 6 — left, featured -->
+        <div class="tl-row tl-row--left">
+            <div class="tl-card tl-card--final tl-reveal" data-index="5">
+                <div class="tl-card-inner">
+                    <div class="tl-icon-wrap">
+                        <span class="tl-icon">🚀</span>
+                        <div class="tl-icon-ring"></div>
+                    </div>
+                    <div class="tl-body">
+                        <span class="tl-era">Present &amp; Future</span>
+                        <h3>AI Product Strategist</h3>
+                        <p>Human-centred AI solutions &amp; digital wellbeing research</p>
+                        <div class="tl-tags">
+                            <span class="tl-tag">AI Strategy</span>
+                            <span class="tl-tag">Product</span>
+                            <span class="tl-tag">Wellbeing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-node tl-node--left tl-node--final tl-reveal" data-index="5">
+                <div class="tl-node-dot"></div>
+                <div class="tl-node-arm"></div>
+            </div>
+            <div class="tl-spacer"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===================== CASE STUDY ===================== -->
+<section class="case-study" id="case-study">
+    <div class="case-left reveal">
+        <p class="section-tag">Featured Case Study</p>
+        <h2>Can AI Reduce<br>Social Media<br>Addiction?</h2>
+        <p class="case-intro">
+            An ongoing product and AI strategy research project exploring whether
+            intelligent systems can help people develop healthier digital habits —
+            not through restriction, but through intelligent substitution.
+        </p>
+        <a href="#" class="btn-primary">Read Full Case Study →</a>
+    </div>
+
+    <div class="case-right">
+        <div class="case-card reveal reveal-delay-1">
+            <div class="case-card-number">01</div>
+            <h3>Problem</h3>
+            <p>
+                Social media platforms are optimised for engagement, creating
+                compulsive usage loops that erode attention and mental wellbeing.
+            </p>
+        </div>
+
+        <div class="case-card reveal reveal-delay-2">
+            <div class="case-card-number">02</div>
+            <h3>Core Thesis</h3>
+            <p>
+                Compulsive use is a need-fulfillment problem — not a discipline
+                problem. Effective AI intervention must substitute, not restrict.
+            </p>
+        </div>
+
+        <div class="case-card reveal reveal-delay-3">
+            <div class="case-card-number">03</div>
+            <h3>Current Focus</h3>
+            <p>
+                User research, behavioural design, intervention systems and
+                AI-powered habit formation with measurable outcomes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="projects" id="projects">
+    <div class="section-intro reveal">
+        <p class="section-tag">Engineering Work</p>
+        <h2>Featured Projects</h2>
+    </div>
+
+    <div class="project-grid">
+
+        <!-- RAG ProjectVisualizer -->
+        <div class="project-card project-card--featured reveal">
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="project-header">
+                <div class="project-chips">
+                    <span class="chip chip--ai">NLP</span>
+                    <span class="chip chip--ai">RAG</span>
+                    <span class="chip chip--ai">LangChain</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">Flask</span>
+                </div>
+                <span class="project-status project-status--live">
+                    <span class="status-dot"></span>Live
+                </span>
+            </div>
+            <h3>RAG ProjectVisualizer</h3>
+            <p>AI-powered codebase intelligence platform. Upload a repository, ask questions, get context-aware answers with source attribution.</p>
+            <div class="project-expand">
+                <div class="project-meta-row">
+                    <span class="project-meta-item">
+                        <span class="project-meta-label">Difficulty</span>
+                        <span class="project-difficulty">
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip"></span>
+                        </span>
+                    </span>
+                    <span class="project-meta-item">
+                        <span class="project-meta-label">Type</span>
+                        <span class="project-meta-value">AI Platform</span>
+                    </span>
+                </div>
+                <div class="project-snippet">
+                    <span class="snippet-label">Core architecture</span>
+                    <code>Embeddings → VectorDB → LLM → Cited Answer</code>
+                </div>
+            </div>
+            <div class="project-footer">
+                <a href="rag.html" class="btn-project-primary">View Details →</a>
+                <a href="https://github.com/nancy0807" target="_blank" rel="noopener" class="btn-project-ghost">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.491.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Machine Learning Studio -->
+        <div class="project-card reveal reveal-delay-1">
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="project-header">
+                <div class="project-chips">
+                    <span class="chip chip--ai">AutoML</span>
+                    <span class="chip chip--ai">PyTorch</span>
+                    <span class="chip">Analytics</span>
+                    <span class="chip">Python</span>
+                </div>
+                <span class="project-status">Research</span>
+            </div>
+            <h3>Machine Learning Studio</h3>
+            <p>AutoML platform with an interactive analytics dashboard. No-code model training with explainability built in.</p>
+            <div class="project-expand">
+                <div class="project-meta-row">
+                    <span class="project-meta-item">
+                        <span class="project-meta-label">Difficulty</span>
+                        <span class="project-difficulty">
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip"></span>
+                            <span class="diff-pip"></span>
+                        </span>
+                    </span>
+                    <span class="project-meta-item">
+                        <span class="project-meta-label">Type</span>
+                        <span class="project-meta-value">ML Platform</span>
+                    </span>
+                </div>
+                <div class="project-snippet">
+                    <span class="snippet-label">Core architecture</span>
+                    <code>Data → AutoML → XAI Dashboard → Export</code>
+                </div>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="btn-project-primary">View Details →</a>
+                <a href="https://github.com/nancy0807" target="_blank" rel="noopener" class="btn-project-ghost">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.491.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Traffic Demand Prediction -->
+        <div class="project-card reveal reveal-delay-2">
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="project-header">
+                <div class="project-chips">
+                    <span class="chip chip--ai">Forecasting</span>
+                    <span class="chip chip--ai">Time Series</span>
+                    <span class="chip">Scikit-learn</span>
+                    <span class="chip">Python</span>
+                </div>
+                <span class="project-status">Research</span>
+            </div>
+            <h3>Traffic Demand Prediction</h3>
+            <p>Predictive ML solution for urban traffic management. Built on temporal pattern recognition and spatial modelling.</p>
+            <div class="project-expand">
+                <div class="project-meta-row">
+                    <span class="project-meta-item">
+                        <span class="project-meta-label">Difficulty</span>
+                        <span class="project-difficulty">
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip diff-pip--on"></span>
+                            <span class="diff-pip"></span>
+                            <span class="diff-pip"></span>
+                        </span>
+                    </span>
+                    <span class="project-meta-item">
+                        <span class="project-meta-label">Type</span>
+                        <span class="project-meta-value">ML Research</span>
+                    </span>
+                </div>
+                <div class="project-snippet">
+                    <span class="snippet-label">Core architecture</span>
+                    <code>Sensor Data → Feature Eng → LSTM → Forecast</code>
+                </div>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="btn-project-primary">View Details →</a>
+                <a href="https://github.com/nancy0807" target="_blank" rel="noopener" class="btn-project-ghost">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.491.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===================== TECH STACK ===================== -->
+<section class="tech-stack" id="stack">
+    <div class="section-intro reveal">
+        <p class="section-tag">Engineering Toolkit</p>
+        <h2>Technologies I Work With</h2>
+        <p class="stack-subtitle">Hover any chip to explore.</p>
+    </div>
+
+    <div class="stack-dashboard">
+
+        <div class="stack-group reveal">
+            <div class="stack-group-header">
+                <span class="stack-group-icon">🧠</span>
+                <h3>AI &amp; Machine Learning</h3>
+            </div>
+            <div class="stack-chips">
+                <span class="stack-chip stack-chip--primary" data-level="Expert">Python</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">PyTorch</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">TensorFlow</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">LangChain</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">RAG Pipelines</span>
+                <span class="stack-chip stack-chip--primary" data-level="Intermediate">Hugging Face</span>
+                <span class="stack-chip stack-chip--primary" data-level="Intermediate">Scikit-learn</span>
+                <span class="stack-chip stack-chip--primary" data-level="Intermediate">FAISS</span>
+            </div>
+        </div>
+
+        <div class="stack-group reveal reveal-delay-1">
+            <div class="stack-group-header">
+                <span class="stack-group-icon">⚙️</span>
+                <h3>Software &amp; Backend</h3>
+            </div>
+            <div class="stack-chips">
+                <span class="stack-chip" data-level="Advanced">Flask</span>
+                <span class="stack-chip" data-level="Intermediate">FastAPI</span>
+                <span class="stack-chip" data-level="Intermediate">Java</span>
+                <span class="stack-chip" data-level="Advanced">SQL</span>
+                <span class="stack-chip" data-level="Intermediate">Firebase</span>
+                <span class="stack-chip" data-level="Advanced">REST APIs</span>
+                <span class="stack-chip" data-level="Intermediate">Vector Databases</span>
+            </div>
+        </div>
+
+        <div class="stack-group reveal reveal-delay-2">
+            <div class="stack-group-header">
+                <span class="stack-group-icon">☁️</span>
+                <h3>Cloud &amp; Infrastructure</h3>
+            </div>
+            <div class="stack-chips">
+                <span class="stack-chip" data-level="Intermediate">AWS</span>
+                <span class="stack-chip" data-level="Intermediate">Firebase</span>
+                <span class="stack-chip" data-level="Intermediate">Git &amp; GitHub</span>
+                <span class="stack-chip" data-level="Intermediate">Docker</span>
+            </div>
+        </div>
+
+        <div class="stack-group reveal reveal-delay-3">
+            <div class="stack-group-header">
+                <span class="stack-group-icon">🎨</span>
+                <h3>Product &amp; Design</h3>
+            </div>
+            <div class="stack-chips">
+                <span class="stack-chip" data-level="Intermediate">Figma</span>
+                <span class="stack-chip" data-level="Advanced">Notion</span>
+                <span class="stack-chip" data-level="Advanced">Product Strategy</span>
+                <span class="stack-chip" data-level="Intermediate">User Research</span>
+                <span class="stack-chip" data-level="Intermediate">Wireframing</span>
+                <span class="stack-chip" data-level="Advanced">Microsoft Excel</span>
+                <span class="stack-chip" data-level="Intermediate">Video Editing</span>
+            </div>
+        </div>
+
+        <div class="stack-group reveal reveal-delay-4">
+            <div class="stack-group-header">
+                <span class="stack-group-icon">✨</span>
+                <h3>Soft Skills &amp; Communication</h3>
+            </div>
+            <div class="stack-chips">
+                <span class="stack-chip stack-chip--primary" data-level="Expert">Public Speaking</span>
+                <span class="stack-chip stack-chip--primary" data-level="Expert">Leadership</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">Event Anchoring</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">Content Scripting</span>
+                <span class="stack-chip stack-chip--primary" data-level="Advanced">Content Creation</span>
+                <span class="stack-chip" data-level="Advanced">Team Building</span>
+                <span class="stack-chip" data-level="Advanced">AI Tools</span>
+                <span class="stack-chip" data-level="Intermediate">Improv</span>
+            </div>
+        </div>
+
+    <!-- Tooltip -->
+    <div class="chip-tooltip" id="chipTooltip" aria-hidden="true"></div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+
+    <!-- Floating paper leaves -->
+    <div class="contact-leaves" aria-hidden="true">
+        <svg class="c-leaf c-leaf--1" viewBox="0 0 60 90"><path d="M30 4C42 16 56 32 52 54 48 72 34 86 30 86 26 86 12 72 8 54 4 32 18 16 30 4Z" fill="#4F6F52" opacity="0.08"/><path d="M30 4 L30 86" stroke="#4F6F52" stroke-width="0.8" opacity="0.10"/></svg>
+        <svg class="c-leaf c-leaf--2" viewBox="0 0 44 68"><path d="M22 3C31 12 41 24 39 41 37 56 24 66 22 66 20 66 7 56 5 41 3 24 13 12 22 3Z" fill="#6B8A6E" opacity="0.09"/></svg>
+        <svg class="c-leaf c-leaf--3" viewBox="0 0 36 56"><path d="M18 2C25 10 34 20 32 34 30 45 19 54 18 54 17 54 6 45 4 34 2 20 11 10 18 2Z" fill="#C4B9A8" opacity="0.14"/></svg>
+        <svg class="c-leaf c-leaf--4" viewBox="0 0 52 80"><path d="M26 3C37 14 49 29 46 50 43 67 29 77 26 77 23 77 9 67 6 50 3 29 15 14 26 3Z" fill="#4F6F52" opacity="0.07"/><path d="M26 3 L26 77" stroke="#4F6F52" stroke-width="0.7" opacity="0.09"/></svg>
+        <svg class="c-leaf c-leaf--5" viewBox="0 0 30 48"><path d="M15 2C21 9 28 17 26 29 24 39 16 46 15 46 14 46 6 39 4 29 2 17 9 9 15 2Z" fill="#6B8A6E" opacity="0.11"/></svg>
+    </div>
+
+    <!-- Paper texture overlay -->
+    <div class="contact-texture" aria-hidden="true"></div>
+
+    <div class="contact-inner reveal">
+        <p class="section-tag">Get In Touch</p>
+        <h2>Open to internships,<br>collaborations &amp; conversations.</h2>
+        <p class="contact-sub">
+            Whether you're building in AI, looking for a product thinker,
+            or want to discuss digital wellbeing — I'd love to connect.
+        </p>
+
+        <div class="contact-cards">
+            <a href="mailto:cniharika278@gmail.com" class="contact-card contact-card--primary reveal reveal-delay-1">
+                <div class="contact-card-icon">✉</div>
+                <div class="contact-card-body">
+                    <span class="contact-card-label">Email</span>
+                    <span class="contact-card-value">cniharika278@gmail.com</span>
+                </div>
+                <span class="contact-card-arrow">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/niharika776327" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-2">
+                <div class="contact-card-icon">in</div>
+                <div class="contact-card-body">
+                    <span class="contact-card-label">LinkedIn</span>
+                    <span class="contact-card-value">niharika776327</span>
+                </div>
+                <span class="contact-card-arrow">→</span>
+            </a>
+            <a href="https://github.com/nancy0807" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-3">
+                <div class="contact-card-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.491.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                </div>
+                <div class="contact-card-body">
+                    <span class="contact-card-label">GitHub</span>
+                    <span class="contact-card-value">nancy0807</span>
+                </div>
+                <span class="contact-card-arrow">→</span>
+            </a>
+        </div>
+
+        <div class="contact-actions reveal">
+           <a href="{{ url_for('static', filename='documents/Niharika_Chauhan_Resume (1).docx') }}" target="_blank" class="btn-primary">Download Resume</a>
+            <a href="https://github.com/nancy0807/can-ai-reduce-social-media-addiction" target="_blank" rel="noopener" class="btn-secondary">Research Repo →</a>
+        </div>
+        
+         </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <span class="footer-name">Niharika Chauhan</span>
+        </div>
+        <p class="footer-copy">
+            Built with intention · VIT Bhopal · 2027
+        </p>
+        <div class="footer-right">
+            <a href="https://github.com/nancy0807" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/niharika-chauhan" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<!-- ===================== SCROLL REVEAL + NAV ===================== -->
+<script>
+    // --- Scroll reveal ---
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // --- Nav: shrink + glass on scroll ---
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // --- Nav: active section highlight ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-mobile-link');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.dataset.section === id);
+                });
+            }
+        });
+    }, { threshold: 0.35 });
+
+    sections.forEach(s => sectionObserver.observe(s));
+
+    // --- Mobile hamburger ---
+    const hamburger = document.getElementById('navHamburger');
+    const mobileMenu = document.getElementById('navMobile');
+
+    hamburger.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', open);
+        hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            hamburger.classList.remove('open');
+        });
+    });
+
+    // --- Journey: spine draw + card reveal on scroll ---
+    const spineFill   = document.getElementById('timelineSpineFill');
+    const spineWrap   = document.querySelector('.timeline-spine-wrap');
+    const tlCards     = document.querySelectorAll('.tl-reveal');
+
+    const tlObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('tl-visible');
+                tlObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    tlCards.forEach(el => tlObserver.observe(el));
+
+    // Draw spine as user scrolls through journey section
+    if (spineFill && spineWrap) {
+        window.addEventListener('scroll', () => {
+            const rect  = spineWrap.getBoundingClientRect();
+            const total = spineWrap.offsetHeight;
+            const seen  = Math.max(0, window.innerHeight * 0.6 - rect.top);
+            const pct   = Math.min(100, (seen / total) * 100);
+            spineFill.style.height = pct + '%';
+        }, { passive: true });
+    }
+
+    // Animate icon on card hover
+    document.querySelectorAll('.tl-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            const icon = card.querySelector('.tl-icon');
+            if (icon) {
+                icon.style.transform = 'scale(1.25) rotate(-8deg)';
+                icon.style.transition = 'transform 0.35s cubic-bezier(0.34,1.56,0.64,1)';
+            }
+        });
+        card.addEventListener('mouseleave', () => {
+            const icon = card.querySelector('.tl-icon');
+            if (icon) { icon.style.transform = ''; }
+        });
+    });
+
+    // --- Hero typing effect ---
+    const typedEl = document.getElementById('heroTyped');
+    if (typedEl) {
+        const words = ['think.', 'learn.', 'live.', 'focus.', 'grow.'];
+        let wi = 0, ci = 0, deleting = false;
+        function typeLoop() {
+            const word = words[wi];
+            typedEl.textContent = deleting ? word.slice(0, ci--) : word.slice(0, ++ci);
+            let delay = deleting ? 60 : 110;
+            if (!deleting && ci === word.length)      { delay = 1800; deleting = true; }
+            else if (deleting && ci === 0)             { deleting = false; wi = (wi + 1) % words.length; delay = 300; }
+            setTimeout(typeLoop, delay);
+        }
+        setTimeout(typeLoop, 1200);
+    }
+
+    // --- Hero parallax on mouse move ---
+    const heroSection = document.querySelector('.hero');
+    const heroRight   = document.querySelector('.hero-right');
+    const heroLeaves  = document.querySelectorAll('.hero-leaf');
+    if (heroSection && heroRight) {
+        heroSection.addEventListener('mousemove', (e) => {
+            const rect = heroSection.getBoundingClientRect();
+            const cx = (e.clientX - rect.left) / rect.width  - 0.5;  // -0.5 → 0.5
+            const cy = (e.clientY - rect.top)  / rect.height - 0.5;
+            heroRight.style.transform = `translate(${cx * 12}px, ${cy * 8}px)`;
+            heroLeaves.forEach((leaf, i) => {
+                const depth = 0.6 + i * 0.18;
+                leaf.style.transform = `translate(${cx * 18 * depth}px, ${cy * 12 * depth}px)`;
+            });
+        });
+        heroSection.addEventListener('mouseleave', () => {
+            heroRight.style.transform = '';
+            heroLeaves.forEach(l => l.style.transform = '');
+        });
+    }
+    // --- Stack chip tooltips ---
+    const tooltip = document.getElementById('chipTooltip');
+    if (tooltip) {
+        document.querySelectorAll('.stack-chip[data-level]').forEach(chip => {
+            chip.addEventListener('mouseenter', () => {
+                tooltip.textContent = chip.dataset.level;
+                tooltip.classList.add('visible');
+            });
+            chip.addEventListener('mousemove', (e) => {
+                tooltip.style.left = (e.clientX + 14) + 'px';
+                tooltip.style.top  = (e.clientY - 30) + 'px';
+            });
+            chip.addEventListener('mouseleave', () => {
+                tooltip.classList.remove('visible');
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -31,8 +31,8 @@
     --shadow-lift:   0 12px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.05);
 
     --font-display:  'Cormorant Garamond', Georgia, serif;
-    --font-body:     'Zen Kaku Gothic New', 'Inter', sans-serif;
-    --font-ui:       'Inter', system-ui, sans-serif;
+    --font-body:     'DM Sans', 'Inter', sans-serif;
+    --font-ui:       'DM Sans', system-ui, sans-serif;
 
     --nav-height:    80px;
     --section-px:    8%;
@@ -59,7 +59,8 @@ body {
     font-family: var(--font-body);
     background: var(--cream);
     color: var(--ink);
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
     padding-top: calc(var(--nav-height) + 20px);
 }
 
@@ -1358,27 +1359,6 @@ nav.scrolled .nav-inner {
         border-color 0.35s ease;
 }
 
-/* Animated glow border */
-.project-glow {
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    background: conic-gradient(
-        from var(--glow-angle, 0deg),
-        transparent 0deg,
-        rgba(79,111,82,0.35) 60deg,
-        transparent 120deg
-    );
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.project-card:hover .project-glow { opacity: 1; animation: glow-spin 3s linear infinite; }
-@property --glow-angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
-@keyframes glow-spin { to { --glow-angle: 360deg; } }
-
 /* Inner content sits above glow */
 .project-card > *:not(.project-glow) { position: relative; z-index: 1; }
 
@@ -1494,8 +1474,8 @@ nav.scrolled .nav-inner {
 }
 
 .project-card:hover .project-expand {
-    max-height: 120px;
-    opacity: 1;
+    max-height: 0;
+    opacity: 0;
 }
 
 .project-meta-row {
@@ -2093,4 +2073,60 @@ nav.scrolled .nav-inner {
     color: var(--terracotta);
     background: var(--terracotta-faint);
     border-color: rgba(196,113,74,0.2);
+}
+
+/* ============================================================
+   CHARACTER ILLUSTRATIONS
+============================================================ */
+.char {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+    mix-blend-mode: multiply;
+}
+
+/* Hero — presenting character sits bottom-left of hero-right */
+.char-presenting {
+    width: 220px;
+    bottom: 0;
+    left: 3%;
+    opacity: 1;
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.10));
+    mix-blend-mode: multiply;
+}
+
+/* Case study — thinking character bottom left */
+.char-thinking {
+    width: 160px;
+    bottom: 40px;
+    left: 2%;
+    opacity: 0.88;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+    animation: leaf-drift-2 10s ease-in-out infinite;
+}
+
+/* Contact — dreaming character bottom right */
+.char-dreaming {
+    width: 180px;
+    bottom: 60px;
+    right: 3%;
+    opacity: 0.85;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+    animation: leaf-drift-1 12s ease-in-out infinite;
+}
+
+/* Hide on small screens */
+@media (max-width: 768px) {
+    .char-thinking,
+    .char-dreaming { display: none; }
+
+    .char-presenting {
+        width: 160px;
+        position: relative;
+        display: block;
+        margin: 0 auto -20px;
+        opacity: 1;
+        animation: none;
+    }
 }

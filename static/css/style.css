@@ -2169,10 +2169,10 @@ nav.scrolled .nav-inner {
 
 /* Hero — sits behind the copy as a faint background presence */
 .char-hero-bg {
-    width: 420px;
+    width: 460px;
     left: 4%;
-    top: 14%;
-    opacity: 0.16;
+    top: 12%;
+    opacity: 0.35;
     z-index: 0;
     mix-blend-mode: multiply;
     filter: none;
@@ -2193,7 +2193,7 @@ nav.scrolled .nav-inner {
 /* Tech Stack — presenting character, bottom right of the section, enlarged */
 .char-presenting {
     width: 230px;
-    bottom: 10px;
+    bottom: 80px;
     right: 3%;
     opacity: 0.9;
     filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08));
@@ -2203,7 +2203,7 @@ nav.scrolled .nav-inner {
 /* Contact — thinking character bottom left */
 .char-thinking {
     width: 160px;
-    bottom: 40px;
+    bottom: 80px;
     left: 2%;
     opacity: 0.88;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
@@ -2213,7 +2213,7 @@ nav.scrolled .nav-inner {
 /* Contact — dreaming character (currently unused, kept in case it's re-added) */
 .char-dreaming {
     width: 180px;
-    bottom: 60px;
+    bottom: 80px;
     right: 3%;
     opacity: 0.85;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));

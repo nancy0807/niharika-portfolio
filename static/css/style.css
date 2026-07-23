@@ -2169,11 +2169,10 @@ nav.scrolled .nav-inner {
 
 /* Hero — sits behind the copy as a faint background presence */
 .char-hero-bg {
-    width: 480px;
-    right: 4%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.12;
+    width: 420px;
+    left: 4%;
+    top: 14%;
+    opacity: 0.16;
     z-index: 0;
     mix-blend-mode: multiply;
     filter: none;
@@ -2191,10 +2190,10 @@ nav.scrolled .nav-inner {
     animation: leaf-drift-2 11s ease-in-out infinite;
 }
 
-/* Journey — presenting character, bottom right of the section */
+/* Tech Stack — presenting character, bottom right of the section, enlarged */
 .char-presenting {
-    width: 190px;
-    bottom: 20px;
+    width: 230px;
+    bottom: 10px;
     right: 3%;
     opacity: 0.9;
     filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08));
